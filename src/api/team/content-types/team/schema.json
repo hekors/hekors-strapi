@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "Team"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "isAvenger": {
+      "type": "boolean"
+    },
+    "directWebsiteLabel": {
+      "type": "string"
+    },
+    "directWebsiteLink": {
+      "type": "string"
+    },
+    "twitterUsername": {
+      "type": "string"
+    },
+    "instagramUsername": {
+      "type": "string"
+    },
+    "linkedInUsername": {
+      "type": "string"
+    },
+    "githubUsername": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
