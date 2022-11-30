@@ -4,7 +4,8 @@
   "info": {
     "singularName": "hackathon",
     "pluralName": "hackathons",
-    "displayName": "Hackathon"
+    "displayName": "Hackathon",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,34 +25,37 @@
       "type": "boolean"
     },
     "hackathonLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "hackathonBG": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "hackathonContentImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "hackathonStartDate": {
       "type": "date"
@@ -64,6 +68,13 @@
     },
     "hackathonEndTime": {
       "type": "time"
+    },
+    "hackathonSlugID": {
+      "type": "uid",
+      "targetField": "hackathonTitle"
+    },
+    "hackathonDescription": {
+      "type": "richtext"
     }
   }
 }
