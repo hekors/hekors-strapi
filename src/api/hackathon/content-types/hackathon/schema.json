@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hackathons",
+  "info": {
+    "singularName": "hackathon",
+    "pluralName": "hackathons",
+    "displayName": "Hackathon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hackathonTitle": {
+      "type": "string"
+    },
+    "hackathonOrganizer": {
+      "type": "string"
+    },
+    "isHackathonOffline": {
+      "type": "boolean"
+    },
+    "isHackathonCompleted": {
+      "type": "boolean"
+    },
+    "hackathonLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "hackathonBG": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "hackathonContentImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "hackathonStartDate": {
+      "type": "date"
+    },
+    "hackathonEndDate": {
+      "type": "date"
+    },
+    "hackathonStartTime": {
+      "type": "time"
+    },
+    "hackathonEndTime": {
+      "type": "time"
+    }
+  }
+}
