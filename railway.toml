@@ -3,7 +3,7 @@ builder = "nixpacks"
 buildCommand = "npm run build"
 
 [deploy]
-startCommand = "npm run start"
+startCommand = "npm run develop"
 healthcheckPath = "/"
 healthcheckTimeout = 100
 restartPolicyType = "never"
