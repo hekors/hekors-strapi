@@ -1,9 +1,9 @@
 [build]
 builder = "nixpacks"
-buildCommand = "strapi build"
+buildCommand = "npm run build"
 
 [deploy]
-startCommand = "strapi start"
+startCommand = "npm run start"
 healthcheckPath = "/"
 healthcheckTimeout = 100
 restartPolicyType = "never"
